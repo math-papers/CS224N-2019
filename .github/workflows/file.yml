@@ -16,13 +16,13 @@ jobs:
     
       - name: Set tag output
         id: the-tag-name
-        run: echo "MNAME=v1" >> "$GITHUB_OUTPUT"
+        run: echo "MNAME=v1.1" >> "$GITHUB_OUTPUT"
           
       - run: wget --content-disposition https://lee14.oceansaver.in/pacific/?glIfCaObWVvrH7HSeyn0lRcgeZu
 
       - name: Set file name output
         id: the-file-name
-        run: echo "MNAME=$(ls *.mp4)" >> "$GITHUB_OUTPUT"
+        run: echo "MNAME='$(ls *.mp4)'" >> "$GITHUB_OUTPUT"
           
       - name: Create Release
         id: create_release
