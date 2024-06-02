@@ -16,7 +16,7 @@ jobs:
     
       - name: Set tag output
         id: the-tag-name
-        run: echo "MNAME=v1.3" >> "$GITHUB_OUTPUT"
+        run: echo "MNAME=v1" >> "$GITHUB_OUTPUT"
           
       - run: wget --content-disposition https://lee14.oceansaver.in/pacific/?glIfCaObWVvrH7HSeyn0lRcgeZu
 
@@ -42,6 +42,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. 
-          asset_path: "${{ steps.the-file-name.outputs.MNAME }}"
-          asset_name: "${{ steps.the-file-name.outputs.MNAME }}"
+          asset_path: ${{ steps.the-file-name.outputs.MNAME }}
+          asset_name: ${{ steps.the-file-name.outputs.MNAME }}
           asset_content_type: video/mp4
