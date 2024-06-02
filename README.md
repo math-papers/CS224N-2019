@@ -1,7 +1,7 @@
-# CS480-680-2019
-Introduction to Machine Learning
+# CS224N-2019
+Natural Language Processing with Deep Learning
 
-https://m.youtube.com/playlist?list=PLdAoL1zKcqTW-uzoSVBNEecKHsnug_M0k
+https://m.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z
 
-https://cs.uwaterloo.ca/~ppoupart/teaching/cs480-spring19/
+https://web.stanford.edu/class/cs224n/index.html
 
