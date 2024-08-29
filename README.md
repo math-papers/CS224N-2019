@@ -1,3 +1,3 @@
-# CS224N-2019
+# CS224N
 Natural Language Processing with Deep Learning
 
